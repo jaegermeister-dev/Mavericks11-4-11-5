@@ -5,7 +5,7 @@ MacBookPro11,5 — primary tested model
 - Intel Iris Pro
 - AMD Radeon R9 M370X
 - Fully hardware-tested with this project
-MacBookPro11,4 — experimental
+(MacBookPro11,4 — experimental since I do not have the hardware to test)
 - Receives the shared non-GPU hardware fixes.
 - No GPU configuration changes are made.
 - Physical hardware testing is still required.
