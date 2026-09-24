@@ -11,7 +11,24 @@ Supported models
 Other Mac models, including 13-inch MacBook Pros, are not supported.
 What you need
 - A USB drive large enough for the Mavericks installer.
-- The original, unmodified Mavericks DMG.
+- The original, unmodified Mavericks DMG. Get by following the guide below
+---------------------------------------
+- Download the required Mavericks image
+Do not download a random Mavericks ISO or DMG. The required image is built locally from Apple’s original Mavericks recovery installer.
+On a Mac, open Terminal and run:
+mkdir -p "$HOME/Desktop/MavericksDownload"
+cd "$HOME/Desktop/MavericksDownload"
+
+curl -fL "https://mavericksforever.com/get.sh" -o get.sh
+/bin/sh get.sh
+The script obtains a temporary authorization token from Apple, downloads the original Mavericks InstallESD.dmg directly from Apple’s servers, verifies it, and builds:
+InstallMacOSXMavericks.dmg
+Verify the completed image:
+shasum -a 256 InstallMacOSXMavericks.dmg
+The required SHA-256 is:
+0845d2ab27586604d01b99520a0f3ed10813021d10043a54799f55f099d8dd60
+Copy InstallMacOSXMavericks.dmg into the same folder as the Mavericks USB patcher.
+---------------------------------------
 - Mavericks-USB-Patcher.zip
 - A separate partition or disk for Mavericks.
 The original DMG must match this SHA-256:
