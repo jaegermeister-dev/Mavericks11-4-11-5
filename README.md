@@ -1,3 +1,9 @@
+GET THE MAVERICKS DMG FROM https://archive.org/details/os-x-mavericks-dmg-202602
+
+THE HASH MUST BE 0845d2ab27586604d01b99520a0f3ed10813021d10043a54799f55f099d8dd60
+
+PLACE THE DMG WITHIN THE SAME FOLDER AS THE SCRIPT
+
 OS X Mavericks for the 15-inch Mid-2015 MacBook Pro
 This project adds support for running OS X Mavericks 10.9.5 build 13F34 on the 15-inch Mid-2015 MacBook Pro.
 Supported models
