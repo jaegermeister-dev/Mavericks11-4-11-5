@@ -65,21 +65,15 @@ You will need:
 - The original, unmodified Mavericks installer DMG
 - Mavericks-USB-Patcher.zip
 - A separate partition or disk on which to install Mavericks
-Obtaining the Mavericks DMG
-Do not use a random Mavericks ISO or DMG. The required image must be built from Apple’s original Mavericks recovery installer.
-On a Mac, open Terminal and run:
-mkdir -p "$HOME/Desktop/MavericksDownload"
-cd "$HOME/Desktop/MavericksDownload"
 
-curl -fL "https://mavericksforever.com/get.sh" -o get.sh
-/bin/sh get.sh
-The script obtains temporary authorization from Apple, downloads the original Mavericks InstallESD.dmg directly from Apple’s servers, verifies it and creates:
-InstallMacOSXMavericks.dmg
-Verify the completed image:
-shasum -a 256 InstallMacOSXMavericks.dmg
+OBTAINING THE MAVERICKS DMG
+
+https://archive.org/details/os-x-mavericks-dmg-202602
+
 The required SHA-256 is:
 0845d2ab27586604d01b99520a0f3ed10813021d10043a54799f55f099d8dd60
 The filename does not matter. The USB patcher checks every .dmg file in its folder and automatically selects the image matching this hash.
+
 Creating the installer USB
 Warning: The selected USB drive will be completely erased. Every partition and file on it will be destroyed.
 
